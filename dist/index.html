@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRIDE - Society for Technical Resources, Innovation & Development of Engineers</title>
+    <meta name="description" content="Join STRIDE, an NGO empowering engineering students through mentorship, skill development, and innovation. Connect with industry experts and grow your career.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'stride': {
+                            'blue': '#3B82F6',
+                            'navy': '#0a1f40',
+                            'light-blue': '#60A5FA',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    
+    
+    <!-- Heroicons -->
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js" type="module"></script>
+  <script type="module" crossorigin src="/STRIDE/assets/index-2dc3d5ad.js"></script>
+  <link rel="stylesheet" href="/STRIDE/assets/index-0315da96.css">
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="container-custom">
+            <div class="flex items-center justify-between h-16 px-4">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="/STRIDE/assets/logo-full-f783eff3.png" alt="STRIDE Logo" class="h-10 w-auto">
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-stride-blue font-semibold">Home</a>
+                    <a href="events.html" class="nav-link text-gray-600 hover:text-stride-blue transition-colors">Events</a>
+                    <a href="hackathon.html" class="nav-link text-gray-600 hover:text-stride-blue transition-colors">Hackathon</a>
+                    <a href="community.html" class="nav-link text-gray-600 hover:text-stride-blue transition-colors">Community</a>
+                    <button class="btn-primary" data-modal="membership-modal">Join STRIDE</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+                <div class="px-4 py-2 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-stride-blue font-semibold">Home</a>
+                    <a href="events.html" class="block px-3 py-2 text-gray-600 hover:text-stride-blue">Events</a>
+                    <a href="hackathon.html" class="block px-3 py-2 text-gray-600 hover:text-stride-blue">Hackathon</a>
+                    <a href="community.html" class="block px-3 py-2 text-gray-600 hover:text-stride-blue">Community</a>
+                    <button class="w-full mt-4 btn-primary" data-modal="membership-modal">Join STRIDE</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-stride">
+        <div class="container-custom section-padding">
+            <div class="text-center max-w-4xl mx-auto animate-slide-up">
+                <img src="/STRIDE/assets/logo-full-f783eff3.png" alt="STRIDE Logo" class="h-20 mx-auto mb-8">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-stride-navy">
+                    Empowering Engineers,<br>
+                    <span class="text-gradient">Innovating Tomorrow</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+                    Join a community of engineering students and professionals committed to learning, innovation, and societal impact
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="btn-primary text-lg px-8 py-4" data-modal="membership-modal">
+                        Become a Member
+                    </button>
+                    <a href="events.html" class="btn-secondary text-lg px-8 py-4">
+                        Explore Events
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About STRIDE Section -->
+    <section class="section-padding bg-white px-4 sm:px-6 lg:px-8">
+        <div class="container-custom">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-stride-navy mb-6">Who We Are</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="card text-left">
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            <strong>STRIDE</strong> is an NGO formed by Engineering Students & Young Professionals to Empower Self and Society through Supportive Community of Engineers and Industry experts.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                            We are a student-centered platform built to uplift learners in the fields of emerging technologies, innovation, entrepreneurship, and advanced soft and hard skills.
+                        </p>
+                        <div class="bg-stride-light-blue/10 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-stride-navy mb-3">Our Mission</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                                Our Mission is to empower Students and Young professionals by providing Trustworthy Mentorship, Fostering Skills and nurturing Talent through Supportive Community of Engineers and Industry experts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Objectives Section -->
+    <section class="section-padding bg-gray-50">
+        <div class="container-custom px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-stride-navy mb-6">What Drives Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our core objectives guide everything we do, from mentorship to innovation
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Objective 1 -->
+                <div class="card animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-stride-blue/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-stride-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stride-navy">Community Building</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Promote lifetime contribution through continuous learning and mentorship
+                    </p>
+                </div>
+
+                <!-- Objective 2 -->
+                <div class="card animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-stride-blue/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-stride-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stride-navy">Career Growth</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Facilitate access to opportunities, jobs, and higher education
+                    </p>
+                </div>
+
+                <!-- Objective 3 -->
+                <div class="card animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-stride-blue/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-stride-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stride-navy">Emerging Technologies</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Upskill in cutting-edge technologies with ethical practices
+                    </p>
+                </div>
+
+                <!-- Objective 4 -->
+                <div class="card animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-stride-blue/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-stride-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stride-navy">Research & Innovation</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Foster culture of research aligned with societal values
+                    </p>
+                </div>
+
+                <!-- Objective 5 -->
+                <div class="card animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-stride-blue/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-stride-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stride-navy">Networking & Mentorship</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Connect students with professionals and industry experts
+                    </p>
+                </div>
+
+                <!-- Objective 6 -->
+                <div class="card animate-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-stride-blue/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-stride-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stride-navy">Values-Driven Education</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Promote moral values in technical education
+                    </p>
+                </div>
+
+                <!-- Objective 7 -->
+                <div class="card animate-on-scroll md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-stride-blue/10 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-stride-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stride-navy">Talent Development</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Raise awareness and support entrepreneurial aspirations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Benefits Section -->
+    <section class="section-padding bg-white">
+        <div class="container-custom px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold text-stride-navy mb-6">Join STRIDE</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    As a STRIDE member, you gain access to exclusive benefits and opportunities
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="card mb-8">
+                    <h3 class="text-2xl font-semibold text-stride-navy mb-6">Membership Benefits</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-2xl">🤝</span>
+                            <div>
+                                <h4 class="font-semibold text-stride-navy mb-1">Networking</h4>
+                                <p class="text-gray-600 text-sm">Connect with engineering students and professionals</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-2xl">📚</span>
+                            <div>
+                                <h4 class="font-semibold text-stride-navy mb-1">Exclusive Courses</h4>
+                                <p class="text-gray-600 text-sm">Access to development programs and workshops</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-2xl">👨‍🏫</span>
+                            <div>
+                                <h4 class="font-semibold text-stride-navy mb-1">Personal Mentorship</h4>
+                                <p class="text-gray-600 text-sm">Guidance from industry experts</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-2xl">🎫</span>
+                            <div>
+                                <h4 class="font-semibold text-stride-navy mb-1">50% Discount</h4>
+                                <p class="text-gray-600 text-sm">On all general programs and events</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-2xl">🚀</span>
+                            <div>
+                                <h4 class="font-semibold text-stride-navy mb-1">Early Access</h4>
+                                <p class="text-gray-600 text-sm">To events, hackathons, and workshops</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-2xl">💼</span>
+                            <div>
+                                <h4 class="font-semibold text-stride-navy mb-1">Career Guidance</h4>
+                                <p class="text-gray-600 text-sm">Job opportunities and career support</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-stride-light-blue/10 rounded-lg">
+                        <p class="text-gray-700 mb-4">
+                            <strong>Membership Note:</strong> Open to all Indian engineering students and young professionals (both male and female)
+                        </p>
+                        <button class="btn-primary" data-modal="membership-modal">
+                            Apply for Membership
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="section-padding bg-gradient-to-r from-stride-blue to-stride-light-blue text-white">
+        <div class="container-custom text-center">
+            <div class="max-w-3xl mx-auto animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Make an Impact?</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Join STRIDE and be part of a movement that's shaping the future of engineering in India
+                </p>
+                <button class="bg-white text-stride-blue hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl" data-modal="membership-modal">
+                    Get Started Today
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stride-navy text-white">
+        <div class="container-custom py-16 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Column 1: About -->
+                <div>
+                    <img src="/STRIDE/assets/logo-icon-94e6f59a.png" alt="STRIDE Logo" class="h-10 w-auto mb-4">
+                    <p class="text-sm text-gray-300 mb-2">Society for Technical Resources, Innovation & Development of Engineers</p>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Empowering Self and Society through Supportive Community of Engineers and Industry experts.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="events.html" class="text-gray-300 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="hackathon.html" class="text-gray-300 hover:text-white transition-colors">Hackathon</a></li>
+                        <li><a href="community.html" class="text-gray-300 hover:text-white transition-colors">Community</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Membership</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>📍 Hyderabad, Telangana, India</li>
+                        <li>📧 engineersforumhyd@gmail.com</li>
+                        <li>📱 +91 XXXXX XXXXX</li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Social Media -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.linkedin.com/" class="text-gray-300 hover:text-stride-blue transition-colors" title="LinkedIn">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/" class="text-gray-300 hover:text-stride-blue transition-colors" title="X">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/stride_hyd?igsh=MXIxenF4bjQ0cW04" class="text-gray-300 hover:text-stride-blue transition-colors" title="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-stride-blue transition-colors" title="GitHub">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-stride-blue transition-colors" title="YouTube">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-700 py-6">
+            <div class="container-custom text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 STRIDE - Society for Technical Resources, Innovation & Development of Engineers. All rights reserved.
+                </p>
+                <div class="mt-2 space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal 1: Membership Registration -->
+    <div id="membership-modal" class="modal fixed inset-0 z-50 hidden">
+        <div class="modal-overlay absolute inset-0 bg-black/50"></div>
+        <div class="modal-content relative flex items-center justify-center min-h-screen p-4">
+            <div class="bg-white rounded-xl shadow-2xl max-w-md w-full p-8">
+                <button class="modal-close absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-stride-navy mb-4">Join STRIDE</h2>
+                    <p class="text-gray-600 mb-6">
+                        Scan the QR code or click the link below to register for STRIDE membership.
+                    </p>
+                    
+                    <!-- TODO: Replace with actual QR code -->
+                    <img src="data:image/png;base64,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" alt="QR Code for STRIDE Registration" class="w-64 h-64 mx-auto mb-6 border rounded-lg">
+                    
+                    <a href="#" class="btn-primary w-full block text-center">
+                        Register Now
+                    </a>
+                    
+                    <p class="text-xs text-gray-500 mt-4">
+                        <!-- TODO: Update with actual registration link -->
+                        This will redirect to our registration form
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
